@@ -37,6 +37,7 @@ module.exports = {
 		semi: ['warn', 'always'],
 		'no-unused-vars': 'off', // Desactiva la regla 'no-unused-vars'
 		'max-len': 'off', // Cambia 'error' a 'warn'
-		'no-debugger': 'warn',
+		'no-debugger': 'off',
+		'import/no-unresolved': 'off', // Desactiva la regla 'import/no-unresolved
 	},
 };
