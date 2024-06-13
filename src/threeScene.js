@@ -7,6 +7,7 @@ import gsap from 'gsap';
 import barba from '@barba/core';
 import vertex from './shaders/vertex.glsl';
 import fragment from './shaders/fragment.glsl';
+import dinamicImport from './js/dinamicImport';
 
 export default class Sketch {
   constructor(options) {
@@ -24,12 +25,12 @@ export default class Sketch {
 
     this.renderer = new THREE.WebGLRenderer({
       antialias: true,
-      alpha: true,
+      alpha: false,
     });
     this.renderer.setPixelRatio(window.devicePixelRatio);
     // this.renderer.setPixelRatio(2);
     this.container.appendChild(this.renderer.domElement);
-    this.controls = new OrbitControls(this.camera, this.renderer.domElement);
+    // this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.materials = [];
 
     this.asscroll = new ASScroll({
@@ -64,6 +65,7 @@ export default class Sketch {
           },
           leave(data) {
             console.log(`leave from-home-transition${data}`);
+            // dinamic import
 
             // abandonando la pag.
             that.animationRunning = true;
@@ -77,10 +79,11 @@ export default class Sketch {
               },
             });
           },
-          enter(data) {
+          async enter(data) {
             console.log(`enter from-home-transition${data}`);
 
             //  entrando a la nueva pag.
+            await dinamicImport({ id: 'page1', container: data.next.container.querySelector('[asscroll-container]') });
             that.asscroll = new ASScroll({
               disableRaf: true,
               containerElement: data.next.container.querySelector('[asscroll-container]'), // inside
