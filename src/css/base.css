@@ -1,0 +1,14 @@
+/* resets */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  /* min-height: 500px; */
+}
+
+.inside {
+  opacity: 0;
+}

@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'ClashGrotesk-Variable';
+  src: url('fonts/ClashGrotesk-Variable.woff2') format('woff2'),
+    url('fonts/ClashGrotesk-Variable.woff') format('woff'),
+    url('fonts/ClashGrotesk-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* NeueMachina */
+@font-face {
+  font-family: 'NeueMachina-Light';
+  src: url('fonts/NeueMachina-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: 'NeueMachina-Regular';
+  src: url('fonts/NeueMachina-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'NeueMachina-Bold';
+  src: url('fonts/NeueMachina-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'NeueMachina-Ultrabold';
+  src: url('fonts/NeueMachina-Ultrabold.otf') format('opentype');
+}
+
+/* NeueMontreal */
+@font-face {
+  font-family: 'NeueMontreal-Light';
+  src: url('fonts/NeueMontreal-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: 'NeueMontreal-Regular';
+  src: url('fonts/NeueMontreal-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: 'NeueMontreal-Medium';
+  src: url('fonts/NeueMontreal-Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: 'NeueMontreal-Bold';
+  src: url('fonts/NeueMontreal-Bold.otf') format('opentype');
+}
+
+.logo {
+  font-family: 'NeueMontreal-Bold';
+}
+.item * {
+  font-family: 'NeueMachina-Regular';
+}
+
+[id^='title'] {
+  font-family: 'NeueMachina-Regular';
+}
+
+.f-sec-l > * {
+  font-family: 'NeueMontreal-Light';
+}
+
+.f-sec-r {
+  font-family: 'NeueMontreal-Regular';
+}
+
+/* Font Sizes */
+.f-xs {
+  font-size: 0.75rem; /* 12px */
+  line-height: 1rem; /* 16px */
+}
+
+.f-sm {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+.f-md {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+.f-lg {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
+
+.f-xl {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+}
+
+.f-2xl {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+
+.f-3xl {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+}
+
+.f-4xl {
+  font-size: 2.25rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+}
+
+.f-5xl {
+  font-size: 3rem; /* 48px */
+  line-height: 1;
+}
+
+.f-6xl {
+  font-size: 3.75rem; /* 60px */
+  line-height: 1;
+}
+
+.f-7xl {
+  font-size: 4.5rem; /* 72px */
+  line-height: 1;
+}
+
+.f-8xl {
+  font-size: 6rem; /* 96px */
+  line-height: 1;
+}
+
+.f-9xl {
+  font-size: 8rem; /* 128px */
+  line-height: 1;
+}
+
+/* Font Weights */
+.font-weight-thin {
+  font-weight: 100;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-weight-normal {
+  font-weight: 400;
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+.font-weight-semibold {
+  font-weight: 600;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.font-weight-black {
+  font-weight: 900;
+}
+
+/* f Colors */
+/* .f-primary {
+  color: var(--f-primary-color); 
+}
+
+.f-secondary {
+  color: var(--f-secondary-color); 
+}
+
+.f-success {
+  color: green;
+}
+
+.f-warning {
+  color: orange;
+}
+
+.f-danger {
+  color: red;
+}
+
+.f-info {
+  color: blue;
+}
+
+.f-light {
+  color: #f8f9fa;
+}
+
+.f-dark {
+  color: #212529;
+} */
+
+/* f Styles */
+.f-uppercase {
+  f-transform: uppercase;
+}
+
+.f-lowercase {
+  f-transform: lowercase;
+}
+
+.f-italic {
+  font-style: italic;
+}
+
+.f-underline {
+  f-decoration: underline;
+}
+
+.f-strikethrough {
+  f-decoration: line-through;
+}
+/* Text Alignment */
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
