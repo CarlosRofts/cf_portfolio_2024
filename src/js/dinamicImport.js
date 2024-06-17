@@ -1,8 +1,19 @@
-export default async function dinamicImport({ id, container }) {
-  const { init, styles } = await import(`/root/src/js/${id}.js`);
-  console.log('DINAMIC IMPORT', styles);
-  // const container = document.querySelector('[scroll-wrap]');
+let currentPage;
+let currentProjectId;
+
+export async function dinamicImport({ container, asscroll }) {
+  const { init, styles } = await import(`/root/src/js/pages/${currentPage}.js`);
+  container.classList.add('page-loaded');
   if (styles) container.innerHTML += `<style>${styles}</style>`;
-  if (init) init();
-  debugger;
+  if (init) init(currentProjectId, asscroll);
+}
+
+export function linksClickHandler() {
+  document.querySelectorAll('.item').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      currentPage = link.getAttribute('data-page');
+      currentProjectId = link.getAttribute('id');
+    });
+  });
 }
