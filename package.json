@@ -28,6 +28,7 @@
     "dotenv": "^16.4.5",
     "dotenv-expand": "^11.0.6",
     "gsap": "^3.12.5",
+    "imagesloaded": "^5.0.0",
     "terser": "^5.28.1",
     "three": "^0.162.0",
     "vite-plugin-html": "^3.2.2"
