@@ -7,7 +7,7 @@ import gsap from 'gsap';
 import barba from '@barba/core';
 import vertex from './shaders/vertex.glsl';
 import fragment from './shaders/fragment.glsl';
-import dinamicImport from './js/dinamicImport';
+import { linksClickHandler, dinamicImport } from './js/dinamicImport';
 
 export default class Sketch {
   constructor(options) {
@@ -65,7 +65,6 @@ export default class Sketch {
           },
           leave(data) {
             console.log(`leave from-home-transition${data}`);
-            // dinamic import
 
             // abandonando la pag.
             that.animationRunning = true;
@@ -83,7 +82,10 @@ export default class Sketch {
             console.log(`enter from-home-transition${data}`);
 
             //  entrando a la nueva pag.
-            await dinamicImport({ id: 'page1', container: data.next.container.querySelector('[asscroll-container]') });
+
+            await dinamicImport({ container: data.next.container.querySelector('[asscroll-container]'), asscroll: that.asscroll });
+            // await linksClickHandler(data.next.container.querySelector('[asscroll-container]'));
+
             that.asscroll = new ASScroll({
               disableRaf: true,
               containerElement: data.next.container.querySelector('[asscroll-container]'), // inside
@@ -91,8 +93,9 @@ export default class Sketch {
             that.asscroll.enable({
               newScrollElements: data.next.container.querySelector('.scroll-wrap'), // inside
             });
+
             console.log('enter');
-            console.log('data.next.container', data.next.container.querySelector('[asscroll-container]')); // inside
+            // console.log('data.next.container', data.next.container.querySelector('[asscroll-container]')); // inside
 
             return gsap.timeline().from(data.next.container, {
               opacity: 0,
@@ -159,7 +162,9 @@ export default class Sketch {
     });
   }
 
-  addClickEvents() {
+  async addClickEvents() {
+    linksClickHandler();
+
     this.imageStore.forEach((i) => {
       i.img.addEventListener('click', () => {
         const tl = gsap
