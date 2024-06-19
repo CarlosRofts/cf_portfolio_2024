@@ -25,7 +25,7 @@ export default class Sketch {
 
     this.renderer = new THREE.WebGLRenderer({
       antialias: true,
-      alpha: false,
+      alpha: true,
     });
     this.renderer.setPixelRatio(window.devicePixelRatio);
     // this.renderer.setPixelRatio(2);
