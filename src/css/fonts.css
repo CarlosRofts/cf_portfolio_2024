@@ -55,12 +55,23 @@
   font-family: 'NeueMachina-Regular';
 }
 
-.f-sec-l > * {
-  font-family: 'NeueMontreal-Light';
+.f-prim-r {
+  font-family: 'ClashGrotesk-Variable';
+  font-weight: 600;
 }
 
+.f-sec-l {
+  font-family: 'NeueMontreal-Light';
+}
 .f-sec-r {
   font-family: 'NeueMontreal-Regular';
+}
+
+.f-third-r {
+  font-family: 'NeueMachina-Regular';
+}
+.f-third-l {
+  font-family: 'NeueMachina-Light';
 }
 
 /* Font Sizes */
@@ -222,4 +233,24 @@
 
 .text-right {
   text-align: right;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+/*  Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .f-7xl {
+    font-size: 0.5rem !important; /* 72px */
+    line-height: 1;
+  }
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .f-7xl {
+    font-size: 2.5rem !important; /* 72px */
+    line-height: 1;
+  }
 }
