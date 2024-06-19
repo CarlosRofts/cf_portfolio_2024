@@ -15,10 +15,10 @@ import dynamicImport from 'vite-plugin-dynamic-import';
 export default defineConfig(({ command, mode }) => {
 	const env = loadEnv(mode, process.cwd(), '');
 	return {
-		base: '/cf_portfolio_2024/', // ⛔ githubpages
-		// base: './',
-		root: 'src/',
-		publicDir: '../public/',
+		// base: '/cf_portfolio_2024/', // ⛔ githubpages
+		base: './',
+		// root: 'src/',
+		// publicDir: '../public/',
 		plugins: [
 			dynamicImport(),
 			eslintPlugin({
