@@ -23,12 +23,12 @@ import animateScrollSvg from './js/animations';
 
 // 🔨 hacer alguna animacion de entrada o loader
 
-if (window.location.pathname !== '/') {
-  if (window.location.pathname !== '/index.html') window.location.href = '/';
+if (window.location.pathname !== '/' && !window.location.hash) {
+	window.location.href = '/';
 }
 
 new Sketch({
-  domElement: document.getElementById('container'),
+	domElement: document.getElementById('container'),
 });
 
 animateScrollSvg();
