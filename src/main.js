@@ -25,7 +25,7 @@ import animateScrollSvg from './js/animations';
 
 // const p = window.location.pathname;
 const l = window.location.href;
-debugger;
+console.log('window.location.href', window.location.href);
 
 new Sketch({
 	domElement: document.getElementById('container'),
