@@ -3,9 +3,15 @@ import imagesLoaded from 'imagesloaded';
 import css from '../../css/pages/page1.css?raw';
 import getCurrentData from '../getCurrentData';
 
+// function getImageUrl(name) {
+//   return new URL(`/${name}.png`, import.meta.url).href;
+// }
 function getImageUrl(name) {
-  // Use process.env.BASE_URL for Vite compatibility
-  return new URL(`${process.env.BASE_URL}/dir/${name}.png`).href;
+  // Use `publicPath` from `import.meta` for Vite compatibility
+  console.log(import.meta);
+  debugger;
+  const publicPath = import.meta.env.VITE_PUBLIC_PATH || '/assets/';
+  return new URL(`/img/${name}`, publicPath).href;
 }
 
 function renderProject(project) {

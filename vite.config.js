@@ -48,8 +48,8 @@ export default defineConfig(({ command, mode }) => {
 		build: {
 			// target: 'es2015',
 			// polyfillDynamicImport: false,
-			// outDir: 'dist',
-			// assetsDir: '',
+			outDir: 'dist',
+			assetsDir: '',
 			// minify: 'terser',
 			// sourcemap: true,
 			rollupOptions: {
