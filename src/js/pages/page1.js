@@ -24,7 +24,7 @@ function renderProject(project) {
   const topInfoContainer = document.getElementById('topInfoContainer');
   const tecs = topInfoContainer.querySelector('#tecs');
   project.tecs.forEach((tec) => {
-    tecs.innerHTML += `<img class="me-2" src="img/tecs/${tec}" alt="" />`;
+    tecs.innerHTML += `<img class="me-2" src="/img/tecs/${tec}" alt="" />`;
   });
   const infotxt1 = topInfoContainer.querySelector('#infotxt1');
   infotxt1.innerHTML = project.infotxt;
@@ -43,7 +43,7 @@ function renderProject(project) {
     const textElement = document.getElementById(`text${index + 1}`);
 
     if (imgElement) {
-      imgElement.src = `img/${image}`;
+      imgElement.src = `/img/${image}`;
     }
 
     if (textElement) {
