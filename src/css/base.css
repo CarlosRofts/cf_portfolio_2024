@@ -1,4 +1,27 @@
 /* resets */
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  touch-action: manipulation;
+}
+
+[asscroll-container] {
+  height: 100vh;
+}
+
+canvas {
+  display: block;
+  opacity: 1;
+}
+
+[data-barba-namespace] {
+  /* position: absolute; */
+  top: 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -6,9 +29,17 @@ a {
 .img-fluid {
   max-width: 100%;
   height: auto;
-  /* min-height: 500px; */
 }
 
 .inside {
   opacity: 0;
+}
+
+.logo > * {
+  max-width: 65px;
+  filter: url(#difference); /* Reference the filter by its ID */
+}
+
+svg {
+  width: 100%;
 }
