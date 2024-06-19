@@ -24,7 +24,7 @@ import animateScrollSvg from './js/animations';
 // 🔨 hacer alguna animacion de entrada o loader
 
 new Sketch({
-	domElement: document.getElementById('container'),
+  domElement: document.getElementById('container'),
 });
 
 animateScrollSvg();
