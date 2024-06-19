@@ -4,6 +4,9 @@ import css from '../../css/pages/page1.css?raw';
 import getCurrentData from '../getCurrentData';
 
 function renderProject(project) {
+	console.log('mport.meta.env.BASE_URL', mport.meta.env.BASE_URL);
+	debugger;
+
 	// Renderizar la imagen superior
 	const topImgElement = document.getElementById('topImg');
 	if (topImgElement) {
