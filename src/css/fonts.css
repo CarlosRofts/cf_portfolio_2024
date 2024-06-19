@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'ClashGrotesk-Variable';
-  src: url('fonts/ClashGrotesk-Variable.woff2') format('woff2'),
-    url('fonts/ClashGrotesk-Variable.woff') format('woff'),
-    url('fonts/ClashGrotesk-Variable.ttf') format('truetype');
+  src: url('/fonts/ClashGrotesk-Variable.woff2') format('woff2'),
+    url('/fonts/ClashGrotesk-Variable.woff') format('woff'),
+    url('/fonts/ClashGrotesk-Variable.ttf') format('truetype');
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
@@ -11,37 +11,37 @@
 /* NeueMachina */
 @font-face {
   font-family: 'NeueMachina-Light';
-  src: url('fonts/NeueMachina-Light.otf') format('opentype');
+  src: url('/fonts/NeueMachina-Light.otf') format('opentype');
 }
 @font-face {
   font-family: 'NeueMachina-Regular';
-  src: url('fonts/NeueMachina-Regular.otf') format('opentype');
+  src: url('/fonts/NeueMachina-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: 'NeueMachina-Bold';
-  src: url('fonts/NeueMachina-Bold.otf') format('opentype');
+  src: url('/fonts/NeueMachina-Bold.otf') format('opentype');
 }
 @font-face {
   font-family: 'NeueMachina-Ultrabold';
-  src: url('fonts/NeueMachina-Ultrabold.otf') format('opentype');
+  src: url('/fonts/NeueMachina-Ultrabold.otf') format('opentype');
 }
 
 /* NeueMontreal */
 @font-face {
   font-family: 'NeueMontreal-Light';
-  src: url('fonts/NeueMontreal-Light.otf') format('opentype');
+  src: url('/fonts/NeueMontreal-Light.otf') format('opentype');
 }
 @font-face {
   font-family: 'NeueMontreal-Regular';
-  src: url('fonts/NeueMontreal-Regular.otf') format('opentype');
+  src: url('/fonts/NeueMontreal-Regular.otf') format('opentype');
 }
 @font-face {
   font-family: 'NeueMontreal-Medium';
-  src: url('fonts/NeueMontreal-Medium.otf') format('opentype');
+  src: url('/fonts/NeueMontreal-Medium.otf') format('opentype');
 }
 @font-face {
   font-family: 'NeueMontreal-Bold';
-  src: url('fonts/NeueMontreal-Bold.otf') format('opentype');
+  src: url('/fonts/NeueMontreal-Bold.otf') format('opentype');
 }
 
 .logo {

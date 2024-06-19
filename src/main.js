@@ -1,9 +1,9 @@
+import './css/libs/bootstrap-grid.css';
 import './css/colors.css';
+import './css/fonts.css';
 import './css/base.css';
 import './css/layout.css';
 import './css/theme.css';
-import './css/libs/bootstrap-grid.css';
-import './css/fonts.css';
 import Sketch from './threeScene';
 import animateScrollSvg from './js/animations';
 

@@ -5,6 +5,7 @@
 // 	plugins: [eslint()],
 // });
 import path from 'path';
+import { resolve } from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import eslintPlugin from 'vite-plugin-eslint';
 import babel from 'vite-plugin-babel';
@@ -15,10 +16,11 @@ import dynamicImport from 'vite-plugin-dynamic-import';
 export default defineConfig(({ command, mode }) => {
 	const env = loadEnv(mode, process.cwd(), '');
 	return {
-		base: '/cf_portfolio_2024/', // ⛔ githubpages
+		// base: '/cf_portfolio_2024/', // ⛔ githubpages
 		// base: './',
 		// root: 'src/',
 		// publicDir: '../public/',
+
 		plugins: [
 			dynamicImport(),
 			eslintPlugin({
@@ -44,12 +46,12 @@ export default defineConfig(({ command, mode }) => {
 			glsl(),
 		],
 		build: {
-			target: 'es2015',
-			polyfillDynamicImport: false,
-			outDir: 'dist',
-			assetsDir: '',
-			minify: 'terser',
-			sourcemap: true,
+			// target: 'es2015',
+			// polyfillDynamicImport: false,
+			// outDir: 'dist',
+			// assetsDir: '',
+			// minify: 'terser',
+			// sourcemap: true,
 			rollupOptions: {
 				external: [],
 				output: {
@@ -58,6 +60,10 @@ export default defineConfig(({ command, mode }) => {
 							return 'vendor';
 						}
 					},
+				},
+				input: {
+					main: resolve(__dirname, 'index.html'),
+					page1: resolve(__dirname, 'src/pages/page1.html'),
 				},
 			},
 		},
