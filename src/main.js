@@ -24,8 +24,8 @@ import animateScrollSvg from './js/animations';
 // 🔨 hacer alguna animacion de entrada o loader
 
 // const p = window.location.pathname;
-const l = window.location.href;
 console.log('window.location.href', window.location.href);
+console.log('import.meta.env.BASE_URL', import.meta.env.BASE_URL);
 
 new Sketch({
 	domElement: document.getElementById('container'),
