@@ -29,7 +29,7 @@ console.log('import.meta.env.BASE_URL', import.meta.env.BASE_URL);
 
 const url = window.location.href;
 if (url.includes('.html')) {
-	console.log('contiene .html');
+	window.location.href = '/';
 }
 
 new Sketch({
