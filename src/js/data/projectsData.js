@@ -10,13 +10,13 @@ const projects = [
 		images: ['p1_img1.png', 'p1_img2.png'],
 		title: 'Landing Page',
 		texts: [
-			`Este proyecto es un demo de un Ecommerce, en el Front End usa next.js con typescript y en el Back End usa strapi ( CMS Headless).  
+			`Este proyecto es un demo de un Ecommerce, en el Front End usa next.js con typescript y en el Back End usa Sanity ( CMS Headless).  
       <br />
-      El Front esta desplegado en vercel y el Back End en Heroku.
+      El Front esta desplegado en vercel y el Back End en Sanity.
       <br />
 Al usar un headless cms se simplifica la administración de los datos  en gran medida.`,
 			// 2
-			'Para los pagos usa Strapi por su simpleza de uso y popularidad entre la comunidad, permitiendo pagos con tarjetas de crédito y una fácil administración de los pagos .',
+			'Para los pagos usa Stripe por su simpleza de uso y popularidad entre la comunidad, permitiendo pagos con tarjetas de crédito y una fácil administración de los pagos .',
 		],
 	},
 	{
